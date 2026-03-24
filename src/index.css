@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+
+  --color-flamingo-50: #fff0f5;
+  --color-flamingo-100: #ffe3eb;
+  --color-flamingo-200: #ffc2d4;
+  --color-flamingo-300: #ff94b4;
+  --color-flamingo-400: #ff5787;
+  --color-flamingo-500: #ff2461;
+  --color-flamingo-600: #f00041;
+  
+  --color-coral-100: #ffece3;
+  --color-coral-300: #ffbba1;
+  --color-coral-500: #ff7b52;
+  
+  --color-sky-100: #e0f2fe;
+  --color-sky-300: #7dd3fc;
+  --color-sky-500: #0ea5e9;
+
+  --color-sun-100: #fef3c7;
+  --color-sun-300: #fde047;
+  --color-sun-500: #eab308;
+
+  --color-sand-50: #fdfbf7;
+  --color-sand-100: #f5f0e6;
+  --color-sand-800: #4a4036;
+  --color-sand-900: #332b23;
+}
+
+@layer base {
+  body {
+    @apply bg-sand-50 text-sand-800 font-sans antialiased selection:bg-flamingo-200 selection:text-sand-900;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold text-sand-900;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
